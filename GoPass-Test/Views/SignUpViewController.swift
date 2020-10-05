@@ -16,8 +16,10 @@ class SignUpViewController: BaseViewController {
     @IBOutlet weak var countryCodeTextField: PaddedTextField!
     @IBOutlet weak var phoneNumberTextField: PaddedTextField!
     @IBOutlet weak var scrollView: UIScrollView!
-    
+    @IBOutlet weak var datePicker: UIDatePicker!
+
     private var documentType: DocumentType?
+    private var dateUpdated = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,7 @@ class SignUpViewController: BaseViewController {
         configureTapGesture()
         configureTypePicker()
         configureTextFieldsDelegate()
+        configureDatePicker()
     }
 
     private func configureScrollView() {
@@ -54,8 +57,16 @@ class SignUpViewController: BaseViewController {
         phoneNumberTextField.delegate = self
     }
 
+    private func configureDatePicker() {
+        datePicker.addTarget(self, action: #selector(updateDate), for: .valueChanged)
+    }
+
     @IBAction func back(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+    }
+
+    @objc func updateDate() {
+        dateUpdated = true
     }
 
     @objc func hideKeyboard() {
@@ -69,6 +80,10 @@ class SignUpViewController: BaseViewController {
         }
         guard let userInfo = notification.userInfo, let frame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
         scrollView.contentInset.bottom = frame.height
+    }
+    
+    @IBAction func register(_ sender: Any) {
+        
     }
 }
 

@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="GoPass_Test" customModuleProvider="target">
             <connections>
                 <outlet property="countryCodeTextField" destination="SMz-iM-UJy" id="aZg-7o-1Rs"/>
+                <outlet property="datePicker" destination="UQZ-bK-X5b" id="YFA-v3-mgV"/>
                 <outlet property="documentNumberTextField" destination="py2-d4-KZ6" id="IQ4-Pv-0A0"/>
                 <outlet property="documentTypeTextField" destination="na5-Jl-2E9" id="iPr-HE-p1D"/>
                 <outlet property="emailTextField" destination="9N3-JA-IBZ" id="dKV-h4-Y4a"/>
@@ -36,7 +37,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IAl-2o-8Zl">
-                            <rect key="frame" x="20" y="152" width="374" height="265"/>
+                            <rect key="frame" x="20" y="152" width="374" height="350.5"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tS8-vR-cdh">
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
@@ -51,7 +52,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Numero de documento" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="py2-d4-KZ6" customClass="PaddedTextField" customModule="GoPass_Test" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Número de documento" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="py2-d4-KZ6" customClass="PaddedTextField" customModule="GoPass_Test" customModuleProvider="target">
                                             <rect key="frame" x="70" y="0.0" width="304" height="45"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -102,7 +103,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         </textField>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Numero de telefono" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mRy-KJ-tnd" customClass="PaddedTextField" customModule="GoPass_Test" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Número de télefono" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mRy-KJ-tnd" customClass="PaddedTextField" customModule="GoPass_Test" customModuleProvider="target">
                                             <rect key="frame" x="70" y="0.0" width="304" height="45"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -113,10 +114,26 @@
                                         </textField>
                                     </subviews>
                                 </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de nacimiento (opcional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcY-w0-LwQ">
+                                    <rect key="frame" x="0.0" y="275" width="374" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQZ-bK-X5b">
+                                    <rect key="frame" x="0.0" y="305.5" width="374" height="45"/>
+                                    <color key="tintColor" name="NeonGreen"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="eL5-jb-ShG"/>
+                                    </constraints>
+                                    <date key="date" timeIntervalSinceReferenceDate="-7519301.6587200165">
+                                        <!--2000-10-05 23:18:18 +0000-->
+                                    </date>
+                                </datePicker>
                             </subviews>
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZT-os-RlA" customClass="RoundButton" customModule="GoPass_Test" customModuleProvider="target">
-                            <rect key="frame" x="20" y="517" width="374" height="45"/>
+                            <rect key="frame" x="20" y="602.5" width="374" height="45"/>
                             <color key="backgroundColor" name="NeonGreen"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="7MI-VU-uAW"/>
@@ -125,6 +142,9 @@
                             <state key="normal" title="Continuar">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="register:" destination="-1" eventType="touchUpInside" id="qDD-B4-NcD"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>
