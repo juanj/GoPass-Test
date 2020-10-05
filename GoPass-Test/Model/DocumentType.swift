@@ -15,7 +15,7 @@ struct DocumentType {
         return name.split(separator: " ")
             .compactMap(\.first)
             .map { $0.uppercased() }
-            .joined(separator: " ")
+            .joined(separator: ".")
     }
 }
 

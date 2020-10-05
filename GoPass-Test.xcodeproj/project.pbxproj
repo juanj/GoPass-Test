@@ -21,6 +21,11 @@
 		32E78B1C252BC0E200948B13 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B1B252BC0E200948B13 /* Colors.swift */; };
 		32E78B20252BC7E500948B13 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B1F252BC7E500948B13 /* PaddedTextField.swift */; };
 		32E78B25252BCAD900948B13 /* DocumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B24252BCAD900948B13 /* DocumentType.swift */; };
+		32E78B28252BCCDC00948B13 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B27252BCCDC00948B13 /* RestClient.swift */; };
+		32E78B2B252BCDBB00948B13 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B2A252BCDBB00948B13 /* ServerResponse.swift */; };
+		32E78B2E252BCE9300948B13 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B2D252BCE9300948B13 /* RequestMethod.swift */; };
+		32E78B31252BCEA900948B13 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B30252BCEA900948B13 /* Endpoint.swift */; };
+		32E78B34252BD8F200948B13 /* TypesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B33252BD8F200948B13 /* TypesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		32E78B1B252BC0E200948B13 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		32E78B1F252BC7E500948B13 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
 		32E78B24252BCAD900948B13 /* DocumentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentType.swift; sourceTree = "<group>"; };
+		32E78B27252BCCDC00948B13 /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		32E78B2A252BCDBB00948B13 /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		32E78B2D252BCE9300948B13 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		32E78B30252BCEA900948B13 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		32E78B33252BD8F200948B13 /* TypesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +121,11 @@
 		32E78B22252BCAB700948B13 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				32E78B27252BCCDC00948B13 /* RestClient.swift */,
+				32E78B2A252BCDBB00948B13 /* ServerResponse.swift */,
+				32E78B2D252BCE9300948B13 /* RequestMethod.swift */,
+				32E78B30252BCEA900948B13 /* Endpoint.swift */,
+				32E78B33252BD8F200948B13 /* TypesService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -198,12 +213,17 @@
 				32E78B25252BCAD900948B13 /* DocumentType.swift in Sources */,
 				32E78B19252BC00C00948B13 /* RoundButton.swift in Sources */,
 				32E78B13252BBF1500948B13 /* HomeViewController.swift in Sources */,
+				32E78B34252BD8F200948B13 /* TypesService.swift in Sources */,
+				32E78B31252BCEA900948B13 /* Endpoint.swift in Sources */,
 				32E78B09252BBEE300948B13 /* SignUpViewController.swift in Sources */,
 				32E78B20252BC7E500948B13 /* PaddedTextField.swift in Sources */,
 				32E78B1C252BC0E200948B13 /* Colors.swift in Sources */,
 				32E78B0E252BBF0A00948B13 /* HomeLoginViewController.swift in Sources */,
 				32E78AEF252BBAD700948B13 /* AppDelegate.swift in Sources */,
+				32E78B28252BCCDC00948B13 /* RestClient.swift in Sources */,
+				32E78B2B252BCDBB00948B13 /* ServerResponse.swift in Sources */,
 				32E78AF1252BBAD700948B13 /* SceneDelegate.swift in Sources */,
+				32E78B2E252BCE9300948B13 /* RequestMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
