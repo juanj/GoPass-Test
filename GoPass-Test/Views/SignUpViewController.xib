@@ -10,6 +10,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="GoPass_Test" customModuleProvider="target">
             <connections>
+                <outlet property="countryCodeTextField" destination="SMz-iM-UJy" id="aZg-7o-1Rs"/>
+                <outlet property="documentNumberTextField" destination="py2-d4-KZ6" id="IQ4-Pv-0A0"/>
+                <outlet property="documentTypeTextField" destination="na5-Jl-2E9" id="iPr-HE-p1D"/>
+                <outlet property="emailTextField" destination="9N3-JA-IBZ" id="dKV-h4-Y4a"/>
+                <outlet property="lastNameTextField" destination="xrA-l6-acG" id="18g-Lg-gRI"/>
+                <outlet property="nameTextField" destination="v44-MR-2zK" id="o2x-oW-F1O"/>
+                <outlet property="phoneNumberTextField" destination="mRy-KJ-tnd" id="EyP-ds-W07"/>
+                <outlet property="scrollView" destination="2lg-XR-xPt" id="YWJ-K3-FZW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -61,7 +69,7 @@
                                         <constraint firstAttribute="height" constant="45" id="piq-6e-Lq4"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" textContentType="name"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Apellidos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xrA-l6-acG" customClass="PaddedTextField" customModule="GoPass_Test" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="110" width="374" height="45"/>
@@ -70,7 +78,7 @@
                                         <constraint firstAttribute="height" constant="45" id="E1C-h4-7u5"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" textContentType="family-name"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="family-name"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Correo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9N3-JA-IBZ" customClass="PaddedTextField" customModule="GoPass_Test" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="165" width="374" height="45"/>
@@ -79,7 +87,7 @@
                                         <constraint firstAttribute="height" constant="45" id="K2d-uU-pmQ"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
                                 </textField>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vx0-7W-gQ0">
                                     <rect key="frame" x="0.0" y="220" width="374" height="45"/>
@@ -92,7 +100,7 @@
                                                 <constraint firstAttribute="height" constant="45" id="ob7-Bo-T1S"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         </textField>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Numero de telefono" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mRy-KJ-tnd" customClass="PaddedTextField" customModule="GoPass_Test" customModuleProvider="target">
                                             <rect key="frame" x="70" y="0.0" width="304" height="45"/>
