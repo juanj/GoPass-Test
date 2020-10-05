@@ -8,4 +8,8 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
+
+    @IBAction func back(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
 }

@@ -19,6 +19,7 @@
 		32E78B14252BBF1500948B13 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32E78B12252BBF1500948B13 /* HomeViewController.xib */; };
 		32E78B19252BC00C00948B13 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B18252BC00C00948B13 /* RoundButton.swift */; };
 		32E78B1C252BC0E200948B13 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B1B252BC0E200948B13 /* Colors.swift */; };
+		32E78B20252BC7E500948B13 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B1F252BC7E500948B13 /* PaddedTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		32E78B12252BBF1500948B13 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		32E78B18252BC00C00948B13 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		32E78B1B252BC0E200948B13 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		32E78B1F252BC7E500948B13 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				32E78B18252BC00C00948B13 /* RoundButton.swift */,
+				32E78B1F252BC7E500948B13 /* PaddedTextField.swift */,
 			);
 			path = "Custom Controls";
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				32E78B19252BC00C00948B13 /* RoundButton.swift in Sources */,
 				32E78B13252BBF1500948B13 /* HomeViewController.swift in Sources */,
 				32E78B09252BBEE300948B13 /* SignUpViewController.swift in Sources */,
+				32E78B20252BC7E500948B13 /* PaddedTextField.swift in Sources */,
 				32E78B1C252BC0E200948B13 /* Colors.swift in Sources */,
 				32E78B0E252BBF0A00948B13 /* HomeLoginViewController.swift in Sources */,
 				32E78AEF252BBAD700948B13 /* AppDelegate.swift in Sources */,
