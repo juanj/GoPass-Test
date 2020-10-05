@@ -15,9 +15,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .blue
-        window?.rootViewController = viewController
+        let navigationController = UINavigationController(rootViewController: HomeLoginViewController())
+        navigationController.isNavigationBarHidden = true
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 }

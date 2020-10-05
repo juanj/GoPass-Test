@@ -11,6 +11,14 @@
 		32E78AF1252BBAD700948B13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78AF0252BBAD700948B13 /* SceneDelegate.swift */; };
 		32E78AF8252BBADD00948B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E78AF7252BBADD00948B13 /* Assets.xcassets */; };
 		32E78AFB252BBADD00948B13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E78AF9252BBADD00948B13 /* LaunchScreen.storyboard */; };
+		32E78B09252BBEE300948B13 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B07252BBEE300948B13 /* SignUpViewController.swift */; };
+		32E78B0A252BBEE300948B13 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32E78B08252BBEE300948B13 /* SignUpViewController.xib */; };
+		32E78B0E252BBF0A00948B13 /* HomeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B0C252BBF0A00948B13 /* HomeLoginViewController.swift */; };
+		32E78B0F252BBF0A00948B13 /* HomeLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32E78B0D252BBF0A00948B13 /* HomeLoginViewController.xib */; };
+		32E78B13252BBF1500948B13 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B11252BBF1500948B13 /* HomeViewController.swift */; };
+		32E78B14252BBF1500948B13 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32E78B12252BBF1500948B13 /* HomeViewController.xib */; };
+		32E78B19252BC00C00948B13 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B18252BC00C00948B13 /* RoundButton.swift */; };
+		32E78B1C252BC0E200948B13 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B1B252BC0E200948B13 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		32E78AF7252BBADD00948B13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32E78AFA252BBADD00948B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32E78AFC252BBADD00948B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32E78B07252BBEE300948B13 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		32E78B08252BBEE300948B13 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		32E78B0C252BBF0A00948B13 /* HomeLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLoginViewController.swift; sourceTree = "<group>"; };
+		32E78B0D252BBF0A00948B13 /* HomeLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeLoginViewController.xib; sourceTree = "<group>"; };
+		32E78B11252BBF1500948B13 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		32E78B12252BBF1500948B13 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		32E78B18252BC00C00948B13 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		32E78B1B252BC0E200948B13 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +68,8 @@
 		32E78AED252BBAD700948B13 /* GoPass-Test */ = {
 			isa = PBXGroup;
 			children = (
+				32E78B1B252BC0E200948B13 /* Colors.swift */,
+				32E78B16252BBFDA00948B13 /* Custom Controls */,
 				32E78AEE252BBAD700948B13 /* AppDelegate.swift */,
 				32E78AF0252BBAD700948B13 /* SceneDelegate.swift */,
 				32E78B05252BBD5800948B13 /* Views */,
@@ -65,8 +83,22 @@
 		32E78B05252BBD5800948B13 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				32E78B07252BBEE300948B13 /* SignUpViewController.swift */,
+				32E78B08252BBEE300948B13 /* SignUpViewController.xib */,
+				32E78B0C252BBF0A00948B13 /* HomeLoginViewController.swift */,
+				32E78B0D252BBF0A00948B13 /* HomeLoginViewController.xib */,
+				32E78B11252BBF1500948B13 /* HomeViewController.swift */,
+				32E78B12252BBF1500948B13 /* HomeViewController.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		32E78B16252BBFDA00948B13 /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				32E78B18252BC00C00948B13 /* RoundButton.swift */,
+			);
+			path = "Custom Controls";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				32E78AFB252BBADD00948B13 /* LaunchScreen.storyboard in Resources */,
+				32E78B0F252BBF0A00948B13 /* HomeLoginViewController.xib in Resources */,
+				32E78B14252BBF1500948B13 /* HomeViewController.xib in Resources */,
+				32E78B0A252BBEE300948B13 /* SignUpViewController.xib in Resources */,
 				32E78AF8252BBADD00948B13 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32E78B19252BC00C00948B13 /* RoundButton.swift in Sources */,
+				32E78B13252BBF1500948B13 /* HomeViewController.swift in Sources */,
+				32E78B09252BBEE300948B13 /* SignUpViewController.swift in Sources */,
+				32E78B1C252BC0E200948B13 /* Colors.swift in Sources */,
+				32E78B0E252BBF0A00948B13 /* HomeLoginViewController.swift in Sources */,
 				32E78AEF252BBAD700948B13 /* AppDelegate.swift in Sources */,
 				32E78AF1252BBAD700948B13 /* SceneDelegate.swift in Sources */,
 			);
