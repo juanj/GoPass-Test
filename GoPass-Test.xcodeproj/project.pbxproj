@@ -20,6 +20,7 @@
 		32E78B19252BC00C00948B13 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B18252BC00C00948B13 /* RoundButton.swift */; };
 		32E78B1C252BC0E200948B13 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B1B252BC0E200948B13 /* Colors.swift */; };
 		32E78B20252BC7E500948B13 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B1F252BC7E500948B13 /* PaddedTextField.swift */; };
+		32E78B25252BCAD900948B13 /* DocumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B24252BCAD900948B13 /* DocumentType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		32E78B18252BC00C00948B13 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		32E78B1B252BC0E200948B13 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		32E78B1F252BC7E500948B13 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
+		32E78B24252BCAD900948B13 /* DocumentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,11 +74,13 @@
 			children = (
 				32E78B1B252BC0E200948B13 /* Colors.swift */,
 				32E78B16252BBFDA00948B13 /* Custom Controls */,
-				32E78AEE252BBAD700948B13 /* AppDelegate.swift */,
-				32E78AF0252BBAD700948B13 /* SceneDelegate.swift */,
 				32E78B05252BBD5800948B13 /* Views */,
+				32E78B22252BCAB700948B13 /* Networking */,
+				32E78B23252BCAC600948B13 /* Model */,
 				32E78AF7252BBADD00948B13 /* Assets.xcassets */,
 				32E78AF9252BBADD00948B13 /* LaunchScreen.storyboard */,
+				32E78AEE252BBAD700948B13 /* AppDelegate.swift */,
+				32E78AF0252BBAD700948B13 /* SceneDelegate.swift */,
 				32E78AFC252BBADD00948B13 /* Info.plist */,
 			);
 			path = "GoPass-Test";
@@ -102,6 +106,21 @@
 				32E78B1F252BC7E500948B13 /* PaddedTextField.swift */,
 			);
 			path = "Custom Controls";
+			sourceTree = "<group>";
+		};
+		32E78B22252BCAB700948B13 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		32E78B23252BCAC600948B13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32E78B24252BCAD900948B13 /* DocumentType.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32E78B25252BCAD900948B13 /* DocumentType.swift in Sources */,
 				32E78B19252BC00C00948B13 /* RoundButton.swift in Sources */,
 				32E78B13252BBF1500948B13 /* HomeViewController.swift in Sources */,
 				32E78B09252BBEE300948B13 /* SignUpViewController.swift in Sources */,
