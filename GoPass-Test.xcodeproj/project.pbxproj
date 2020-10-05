@@ -26,6 +26,8 @@
 		32E78B2E252BCE9300948B13 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B2D252BCE9300948B13 /* RequestMethod.swift */; };
 		32E78B31252BCEA900948B13 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B30252BCEA900948B13 /* Endpoint.swift */; };
 		32E78B34252BD8F200948B13 /* TypesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B33252BD8F200948B13 /* TypesService.swift */; };
+		32E78B38252BDAE200948B13 /* OptionsValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B37252BDAE200948B13 /* OptionsValues.swift */; };
+		32E78B3B252BDBAC00948B13 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B3A252BDBAC00948B13 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		32E78B2D252BCE9300948B13 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
 		32E78B30252BCEA900948B13 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		32E78B33252BD8F200948B13 /* TypesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesService.swift; sourceTree = "<group>"; };
+		32E78B37252BDAE200948B13 /* OptionsValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsValues.swift; sourceTree = "<group>"; };
+		32E78B3A252BDBAC00948B13 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 				32E78B0D252BBF0A00948B13 /* HomeLoginViewController.xib */,
 				32E78B11252BBF1500948B13 /* HomeViewController.swift */,
 				32E78B12252BBF1500948B13 /* HomeViewController.xib */,
+				32E78B3A252BDBAC00948B13 /* BaseViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				32E78B24252BCAD900948B13 /* DocumentType.swift */,
+				32E78B37252BDAE200948B13 /* OptionsValues.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,6 +219,7 @@
 				32E78B25252BCAD900948B13 /* DocumentType.swift in Sources */,
 				32E78B19252BC00C00948B13 /* RoundButton.swift in Sources */,
 				32E78B13252BBF1500948B13 /* HomeViewController.swift in Sources */,
+				32E78B38252BDAE200948B13 /* OptionsValues.swift in Sources */,
 				32E78B34252BD8F200948B13 /* TypesService.swift in Sources */,
 				32E78B31252BCEA900948B13 /* Endpoint.swift in Sources */,
 				32E78B09252BBEE300948B13 /* SignUpViewController.swift in Sources */,
@@ -222,6 +229,7 @@
 				32E78AEF252BBAD700948B13 /* AppDelegate.swift in Sources */,
 				32E78B28252BCCDC00948B13 /* RestClient.swift in Sources */,
 				32E78B2B252BCDBB00948B13 /* ServerResponse.swift in Sources */,
+				32E78B3B252BDBAC00948B13 /* BaseViewController.swift in Sources */,
 				32E78AF1252BBAD700948B13 /* SceneDelegate.swift in Sources */,
 				32E78B2E252BCE9300948B13 /* RequestMethod.swift in Sources */,
 			);

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: BaseViewController {
 
     @IBAction func back(_ sender: Any) {
         navigationController?.popViewController(animated: true)

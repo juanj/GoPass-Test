@@ -14,9 +14,10 @@ class RestClient {
         case responseError(Int)
         case noData
     }
-    private let baseURL = "https://test.gopass.com.co/"
+    static let shared = RestClient()
     var session = URLSession(configuration: .default)
 
+    private let baseURL = "https://test.gopass.com.co/"
     func run<ResponseData: Decodable>(_ endpoint: Endpoint, method: RequestMethod, data: Data? = nil, completion: @escaping (Result<ServerResponse<ResponseData>, Error>) -> Void) {
         guard let url = URL(string: "\(baseURL)\(endpoint.rawValue)") else {
             completion(.failure(RestError.badUrl))
