@@ -10,4 +10,5 @@ import Foundation
 enum Endpoint: String {
     case documentType = "tipo/documento/"
     case registerUser = "client/registre"
+    case allEstablishments = "establishment/getAllEstablishment"
 }
