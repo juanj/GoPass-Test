@@ -12,6 +12,7 @@ struct ServerResponse<T: Codable> {
     let code: Int
     let status: Int
     let data: T?
+    let message: String?
 }
 
 extension ServerResponse: Codable {
@@ -20,5 +21,6 @@ extension ServerResponse: Codable {
         case code
         case status
         case data
+        case message
     }
 }

@@ -28,6 +28,10 @@
 		32E78B34252BD8F200948B13 /* TypesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B33252BD8F200948B13 /* TypesService.swift */; };
 		32E78B38252BDAE200948B13 /* OptionsValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B37252BDAE200948B13 /* OptionsValues.swift */; };
 		32E78B3B252BDBAC00948B13 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B3A252BDBAC00948B13 /* BaseViewController.swift */; };
+		32E78B3E252BE64900948B13 /* RegisterRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B3D252BE64900948B13 /* RegisterRequestBody.swift */; };
+		32E78B41252BE8CA00948B13 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B40252BE8CA00948B13 /* UserService.swift */; };
+		32E78B44252BE90900948B13 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B43252BE90900948B13 /* User.swift */; };
+		32E78B4C252BF30100948B13 /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E78B4B252BF30100948B13 /* ServerError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		32E78B33252BD8F200948B13 /* TypesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesService.swift; sourceTree = "<group>"; };
 		32E78B37252BDAE200948B13 /* OptionsValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsValues.swift; sourceTree = "<group>"; };
 		32E78B3A252BDBAC00948B13 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		32E78B3D252BE64900948B13 /* RegisterRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestBody.swift; sourceTree = "<group>"; };
+		32E78B40252BE8CA00948B13 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		32E78B43252BE90900948B13 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		32E78B4B252BF30100948B13 /* ServerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,9 @@
 				32E78B2D252BCE9300948B13 /* RequestMethod.swift */,
 				32E78B30252BCEA900948B13 /* Endpoint.swift */,
 				32E78B33252BD8F200948B13 /* TypesService.swift */,
+				32E78B40252BE8CA00948B13 /* UserService.swift */,
+				32E78B3D252BE64900948B13 /* RegisterRequestBody.swift */,
+				32E78B4B252BF30100948B13 /* ServerError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -140,6 +151,7 @@
 			children = (
 				32E78B24252BCAD900948B13 /* DocumentType.swift */,
 				32E78B37252BDAE200948B13 /* OptionsValues.swift */,
+				32E78B43252BE90900948B13 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,20 +230,24 @@
 			files = (
 				32E78B25252BCAD900948B13 /* DocumentType.swift in Sources */,
 				32E78B19252BC00C00948B13 /* RoundButton.swift in Sources */,
+				32E78B41252BE8CA00948B13 /* UserService.swift in Sources */,
 				32E78B13252BBF1500948B13 /* HomeViewController.swift in Sources */,
 				32E78B38252BDAE200948B13 /* OptionsValues.swift in Sources */,
+				32E78B4C252BF30100948B13 /* ServerError.swift in Sources */,
 				32E78B34252BD8F200948B13 /* TypesService.swift in Sources */,
 				32E78B31252BCEA900948B13 /* Endpoint.swift in Sources */,
 				32E78B09252BBEE300948B13 /* SignUpViewController.swift in Sources */,
 				32E78B20252BC7E500948B13 /* PaddedTextField.swift in Sources */,
 				32E78B1C252BC0E200948B13 /* Colors.swift in Sources */,
 				32E78B0E252BBF0A00948B13 /* HomeLoginViewController.swift in Sources */,
+				32E78B3E252BE64900948B13 /* RegisterRequestBody.swift in Sources */,
 				32E78AEF252BBAD700948B13 /* AppDelegate.swift in Sources */,
 				32E78B28252BCCDC00948B13 /* RestClient.swift in Sources */,
 				32E78B2B252BCDBB00948B13 /* ServerResponse.swift in Sources */,
 				32E78B3B252BDBAC00948B13 /* BaseViewController.swift in Sources */,
 				32E78AF1252BBAD700948B13 /* SceneDelegate.swift in Sources */,
 				32E78B2E252BCE9300948B13 /* RequestMethod.swift in Sources */,
+				32E78B44252BE90900948B13 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

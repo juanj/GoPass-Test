@@ -17,7 +17,9 @@ class SignUpViewController: BaseViewController {
     @IBOutlet weak var phoneNumberTextField: PaddedTextField!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var datePicker: UIDatePicker!
-
+    @IBOutlet weak var passwordTextField: PaddedTextField!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     private var documentType: DocumentType?
     private var dateUpdated = false
 
@@ -83,7 +85,55 @@ class SignUpViewController: BaseViewController {
     }
     
     @IBAction func register(_ sender: Any) {
-        
+        guard let type = documentType?.id else {
+            showError(message: "Por favor elige un tipo de docmento")
+            return
+        }
+
+        guard let documentNumber = documentNumberTextField.text, !documentNumber.isEmpty else {
+            showError(message: "Por favor ingresa tu número de documento")
+            return
+        }
+
+        guard let name = nameTextField.text, !name.isEmpty else {
+            showError(message: "Por favor ingresa tu nombre")
+            return
+        }
+
+        guard let lastName = lastNameTextField.text, !lastName.isEmpty else {
+            showError(message: "Por favor ingresa tus apellidos")
+            return
+        }
+
+        guard let email = emailTextField.text, !email.isEmpty else {
+            showError(message: "Por favor ingresa un correo")
+            return
+        }
+
+        guard let phoneNumber = phoneNumberTextField.text, !name.isEmpty else {
+            showError(message: "Por favor ingresa tu número de teléfono")
+            return
+        }
+
+        guard let password = passwordTextField.text, !password.isEmpty else {
+            showError(message: "Por favor ingresa un password")
+            return
+        }
+
+        activityIndicator.startAnimating()
+        view.isUserInteractionEnabled = false
+
+        let userService = UserService(restCleint: .shared)
+        userService.register(body: RegisterRequestBody(documentType: type, documentNumber: documentNumber, name: name, lastName: lastName, phoneNumber: phoneNumber, email: email, password: password)) { result in
+            self.activityIndicator.stopAnimating()
+            self.view.isUserInteractionEnabled = true
+            switch result {
+            case .success(let user):
+                self.navigationController?.pushViewController(HomeViewController(), animated: true)
+            case .failure(let error):
+                self.showError(message: error.localizedDescription)
+            }
+        }
     }
 }
 
