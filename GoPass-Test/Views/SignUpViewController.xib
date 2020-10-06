@@ -131,15 +131,12 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQZ-bK-X5b">
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="UQZ-bK-X5b">
                                     <rect key="frame" x="0.0" y="360.5" width="374" height="45"/>
                                     <color key="tintColor" name="NeonGreen"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="45" id="eL5-jb-ShG"/>
                                     </constraints>
-                                    <date key="date" timeIntervalSinceReferenceDate="-7519301.6587200165">
-                                        <!--2000-10-05 23:18:18 +0000-->
-                                    </date>
                                 </datePicker>
                             </subviews>
                         </stackView>

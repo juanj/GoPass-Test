@@ -57,6 +57,7 @@ class SignUpViewController: BaseViewController {
         emailTextField.delegate = self
         countryCodeTextField.delegate = self
         phoneNumberTextField.delegate = self
+        passwordTextField.delegate = self
     }
 
     private func configureDatePicker() {
@@ -168,7 +169,7 @@ extension SignUpViewController: UITextFieldDelegate {
             countryCodeTextField.becomeFirstResponder()
         case countryCodeTextField:
             phoneNumberTextField.becomeFirstResponder()
-        case phoneNumberTextField:
+        case passwordTextField:
             view.endEditing(true)
         default:
             break
